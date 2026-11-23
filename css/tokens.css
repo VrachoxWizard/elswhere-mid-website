@@ -1,0 +1,63 @@
+:root {
+  /* Palette Tokens */
+  --color-canvas-bg: #FDEED6; /* Outer presentation canvas matching Ui-reference.webp */
+  --color-cream: #FEEFD9;     /* Pill buttons, badge accent */
+  --color-cream-hover: #FFF5E8;
+  --color-cream-active: #F7E3C4;
+  --color-ivory: #FFF6EA;     /* Hero title "Get Lost. Feel Found." and logo */
+  --color-white: #FFFFFF;
+  --color-text-primary: #FFFFFF;
+  --color-text-secondary: rgba(255, 255, 255, 0.85);
+  --color-text-muted: rgba(255, 255, 255, 0.68);
+  --color-navy-dark: #0A1118; /* Dark button text */
+  --color-navy-text: #0C101A;
+  --color-border-subtle: rgba(255, 255, 255, 0.38);
+  --color-border-glass: rgba(255, 255, 255, 0.2);
+  --color-glass-bg: rgba(255, 255, 255, 0.08);
+
+  /* Typography */
+  --font-serif: 'Fraunces', Georgia, 'Times New Roman', serif;
+  --font-sans: 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  /* Font Variation Settings */
+  --serif-title-settings: 'opsz' 144, 'wght' 600, 'SOFT' 0, 'WONK' 0;
+  --serif-logo-settings: 'opsz' 100, 'wght' 550, 'SOFT' 0, 'WONK' 0;
+
+  /* Spacing Scale */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+
+  /* Geometry */
+  --radius-pill: 9999px;
+  --radius-circle: 50%;
+  --radius-card: 6px;
+  --radius-modal: 16px;
+
+  /* Transitions */
+  --transition-fast: 180ms cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-normal: 280ms cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-slow: 450ms cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Shadows */
+  --shadow-mockup: 0 25px 60px -15px rgba(0, 0, 0, 0.35), 0 10px 25px -10px rgba(0, 0, 0, 0.2);
+  --shadow-button: 0 4px 14px rgba(0, 0, 0, 0.18);
+  --shadow-button-hover: 0 6px 20px rgba(0, 0, 0, 0.28);
+  --shadow-glow: 0 0 25px rgba(254, 239, 217, 0.35);
+
+  /* Elevation */
+  --z-bg: 1;
+  --z-content: 10;
+  --z-header: 50;
+  --z-hud: 50;
+  --z-drawer: 100;
+  --z-modal: 200;
+  --z-controls: 300;
+}

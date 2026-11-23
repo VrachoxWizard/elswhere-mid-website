@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PLACES. — Sanctuaries & Architectural Refuges | elsewhere.</title>
+  <meta name="description" content="Discover secluded sanctuaries across Switzerland, Norway, Hokkaido, and the Dolomites, designed to dissolve into pristine landscapes.">
+
+  <!-- Google Fonts: Fraunces & Plus Jakarta Sans & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..700,0..100,0..1;1,9..144,300..700,0..100,0..1&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body class="inner-page">
+
+  <!-- Main Navigation Header -->
+  <header class="page-header" role="banner">
+    <div class="header-inner">
+      <a href="index.html" class="site-logo" aria-label="Elsewhere Home">
+        <span class="logo-text">elsewhere.</span>
+      </a>
+
+      <nav class="nav-menu" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="places.html" class="nav-link active">PLACES.</a></li>
+          <li class="nav-item"><a href="journeys.html" class="nav-link">JOURNEYS.</a></li>
+          <li class="nav-item"><a href="experiences.html" class="nav-link">EXPERIENCES.</a></li>
+          <li class="nav-item"><a href="journal.html" class="nav-link">JOURNAL</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button type="button" class="btn-escape" id="btnPlanEscape" aria-haspopup="dialog">
+          <span class="btn-escape-text">PLAN YOUR ESCAPE</span>
+          <svg class="icon-arrow-diagonal" viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="4" y1="12" x2="12" y2="4"></line>
+            <polyline points="5 4 12 4 12 11"></polyline>
+          </svg>
+        </button>
+
+        <button type="button" class="btn-menu" id="btnToggleMenu" aria-label="Open Navigation Menu" aria-expanded="false" aria-controls="navDrawer">
+          <span class="menu-line"></span>
+          <span class="menu-line"></span>
+          <span class="menu-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Hero Banner -->
+  <section class="page-hero" aria-labelledby="placesTitle">
+    <div class="page-hero-container">
+      <nav class="page-breadcrumbs" aria-label="Breadcrumbs">
+        <span>Sanctuary Directory</span> / <strong>Alpine &amp; Coastal Refuges</strong>
+      </nav>
+      <h1 class="page-title" id="placesTitle">Sanctuaries Carved from Stone &amp; Silence</h1>
+      <p class="page-lead">
+        Four remote regional collections designed to disappear into untamed topography. Each architectural retreat offers absolute privacy, off-grid tranquility, and direct communion with the elements.
+      </p>
+
+      <!-- Filter Bar -->
+      <div class="filter-bar" role="toolbar" aria-label="Filter sanctuaries by region">
+        <button type="button" class="filter-btn active" data-filter="all">All Sanctuaries</button>
+        <button type="button" class="filter-btn" data-filter="swiss">Swiss Alps</button>
+        <button type="button" class="filter-btn" data-filter="norway">Norwegian Fjords</button>
+        <button type="button" class="filter-btn" data-filter="hokkaido">Hokkaido</button>
+        <button type="button" class="filter-btn" data-filter="dolomites">Dolomites</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Places Directory -->
+  <main class="page-main" id="placesMain">
+    <div class="cards-grid" id="sanctuariesGrid">
+
+      <!-- Place Card 1: Engadin Villa -->
+      <article class="place-card" data-region="swiss">
+        <div class="card-media">
+          <img src="assets/images/background-clean.webp" alt="The Engadin Villa high in the Swiss mountains" class="card-media-art" loading="lazy">
+          <div class="card-media-overlay"></div>
+          <span class="card-location-tag">
+            <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+            45°55' N · 09°15' E
+          </span>
+          <span class="card-number-tag">01</span>
+        </div>
+        <div class="card-body">
+          <span class="card-region">SWISS ALPS · ENGADIN</span>
+          <h2 class="card-heading">The Engadin Villa</h2>
+          <p class="card-description">
+            Hand-chiseled Valser granite walls, solar glass cantilevers, and private geothermal mineral baths facing the legendary Piz Bernina glacier ridge.
+          </p>
+          <div class="card-specs">
+            <div class="spec-item">
+              <span class="spec-label">Altitude</span>
+              <span class="spec-val">1,822 m</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">Access</span>
+              <span class="spec-val">Private Heli-Pad</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">Capacity</span>
+              <span class="spec-val">Up to 6 Guests</span>
+            </div>
+          </div>
+          <div class="card-action-row">
+            <button type="button" class="btn-card-inquire" onclick="document.getElementById('btnPlanEscape').click();">
+              <span>INQUIRE ACCESS</span>
+              <svg viewBox="0 0 16 16" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" y1="12" x2="12" y2="4"></line><polyline points="5 4 12 4 12 11"></polyline></svg>
+            </button>
+            <span class="card-link-more">Private Estate</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Place Card 2: Lucerne Lakehouse -->
+      <article class="place-card" data-region="swiss">
+        <div class="card-media">
+          <img src="assets/images/background-clean.webp" alt="Lucerne Lakehouse nestled on the shore" class="card-media-art" loading="lazy">
+          <div class="card-media-overlay"></div>
+          <span class="card-location-tag">
+            <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+            46°58' N · 08°26' E
+          </span>
+          <span class="card-number-tag">02</span>
+        </div>
+        <div class="card-body">
+          <span class="card-region">SWISS ALPS · LAKE LUCERNE</span>
+          <h2 class="card-heading">Lucerne Lakehouse</h2>
+          <p class="card-description">
+            Direct glacial fjord-like water access with vintage Riva speedboats, subterranean sommelier cellar, and uninterrupted vistas of Mount Pilatus.
+          </p>
+          <div class="card-specs">
+            <div class="spec-item">
+              <span class="spec-label">Setting</span>
+              <span class="spec-val">Waterfront Pier</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">Service</span>
+              <span class="spec-val">Private Chef</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">Capacity</span>
+              <span class="spec-val">8 Guests</span>
+            </div>
+          </div>
+          <div class="card-action-row">
+            <button type="button" class="btn-card-inquire" onclick="document.getElementById('btnPlanEscape').click();">
+              <span>INQUIRE ACCESS</span>
+              <svg viewBox="0 0 16 16" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" y1="12" x2="12" y2="4"></line><polyline points="5 4 12 4 12 11"></polyline></svg>
+            </button>
+            <span class="card-link-more">Lakeside Dock</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Place Card 3: Zermatt High Camp -->
+      <article class="place-card" data-region="swiss">
+        <div class="card-media">
+          <img src="assets/images/background-clean.webp" alt="Zermatt High Camp cliffside retreat" class="card-media-art" loading="lazy">
+          <div class="card-media-overlay"></div>
+          <span class="card-location-tag">
+            <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+            45°59' N · 07°44' E
+          </span>
+          <span class="card-number-tag">03</span>
+        </div>
+        <div class="card-body">
+          <span class="card-region">SWISS ALPS · VALAIS</span>
+          <h2 class="card-heading">Zermatt High Camp</h2>
+          <p class="card-description">
+            Perched upon sheer cliff-faces directly facing the iconic Matterhorn pyramidal crown, accessible solely by private funicular or cable ascent.
+          </p>
+          <div class="card-specs">
+            <div class="spec-item">
+              <span class="spec-label">Altitude</span>
+              <span class="spec-val">2,750 m</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">Terrain</span>
+              <span class="spec-val">High Alpine Ridge</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">Capacity</span>
+              <span class="spec-val">4 Guests</span>
+            </div>
+          </div>
+          <div class="card-action-row">
+            <button type="button" class="btn-card-inquire" onclick="document.getElementById('btnPlanEscape').click();">
+              <span>INQUIRE ACCESS</span>
+              <svg viewBox="0 0 16 16" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" y1="12" x2="12" y2="4"></line><polyline points="5 4 12 4 12 11"></polyline></svg>
+            </button>
+            <span class="card-link-more">Cliffside Refuge</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Place Card 4: Sognefjord Fjord Cabin -->
+      <article class="place-card" data-region="norway">
+        <div class="card-media">
+          <img src="assets/images/background-clean.webp" alt="Sognefjord Glass Cabin in Norway" class="card-media-art" loading="lazy">
+          <div class="card-media-overlay"></div>
+          <span class="card-location-tag">
+            <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+            61°12' N · 07°04' E
+          </span>
+          <span class="card-number-tag">04</span>
+        </div>
+        <div class="card-body">
+          <span class="card-region">NORWEGIAN FJORDS · SOGNEFJORD</span>
+          <h2 class="card-heading">The Fjord Glasshouse</h2>
+          <p class="card-description">
+            A minimalist glass cantilever floating over the emerald waters of Sognefjord. Features an outdoor wood-fired smoke sauna and midnight sun observatory.
+          </p>
+          <div class="card-specs">
+            <div class="spec-item">
+              <span class="spec-label">Coastline</span>
+              <span class="spec-val">Private Waterway</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">Wellness</span>
+              <span class="spec-val">Cedar Smoke Sauna</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">Capacity</span>
+              <span class="spec-val">4 Guests</span>
+            </div>
+          </div>
+          <div class="card-action-row">
+            <button type="button" class="btn-card-inquire" onclick="document.getElementById('btnPlanEscape').click();">
+              <span>INQUIRE ACCESS</span>
+              <svg viewBox="0 0 16 16" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" y1="12" x2="12" y2="4"></line><polyline points="5 4 12 4 12 11"></polyline></svg>
+            </button>
+            <span class="card-link-more">Sea Kayak Launch</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Place Card 5: Hokkaido Cedar Pavilion -->
+      <article class="place-card" data-region="hokkaido">
+        <div class="card-media">
+          <img src="assets/images/background-clean.webp" alt="Niseko Cedar Pavilion in Hokkaido winter" class="card-media-art" loading="lazy">
+          <div class="card-media-overlay"></div>
+          <span class="card-location-tag">
+            <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+            43°34' N · 142°51' E
+          </span>
+          <span class="card-number-tag">05</span>
+        </div>
+        <div class="card-body">
+          <span class="card-region">HOKKAIDO · CEDAR FORESTS</span>
+          <h2 class="card-heading">Niseko Onsen Pavilion</h2>
+          <p class="card-description">
+            Traditional sugi-wood joinery overlooking old-growth birch woodlands. Seamless indoor-outdoor thermal baths fed by subterranean volcanic hot springs.
+          </p>
+          <div class="card-specs">
+            <div class="spec-item">
+              <span class="spec-label">Thermal Spring</span>
+              <span class="spec-val">Natural Geothermal</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">Climate</span>
+              <span class="spec-val">Dry Champagne Powder</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">Capacity</span>
+              <span class="spec-val">6 Guests</span>
+            </div>
+          </div>
+          <div class="card-action-row">
+            <button type="button" class="btn-card-inquire" onclick="document.getElementById('btnPlanEscape').click();">
+              <span>INQUIRE ACCESS</span>
+              <svg viewBox="0 0 16 16" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" y1="12" x2="12" y2="4"></line><polyline points="5 4 12 4 12 11"></polyline></svg>
+            </button>
+            <span class="card-link-more">Private Onsen</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Place Card 6: Dolomites Peak Sanctuary -->
+      <article class="place-card" data-region="dolomites">
+        <div class="card-media">
+          <img src="assets/images/background-clean.webp" alt="Dolomites limestone peak sanctuary" class="card-media-art" loading="lazy">
+          <div class="card-media-overlay"></div>
+          <span class="card-location-tag">
+            <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+            46°30' N · 12°00' E
+          </span>
+          <span class="card-number-tag">06</span>
+        </div>
+        <div class="card-body">
+          <span class="card-region">ITALIAN DOLOMITES · VAL GARDENA</span>
+          <h2 class="card-heading">The Pale Ridge Estate</h2>
+          <p class="card-description">
+            Monolithic larch and limestone architecture positioned to catch the evening enrosadira alpenglow, with private alpine guides and wine cellars.
+          </p>
+          <div class="card-specs">
+            <div class="spec-item">
+              <span class="spec-label">Altitude</span>
+              <span class="spec-val">2,230 m</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">Setting</span>
+              <span class="spec-val">High Alpine Meadow</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">Capacity</span>
+              <span class="spec-val">8 Guests</span>
+            </div>
+          </div>
+          <div class="card-action-row">
+            <button type="button" class="btn-card-inquire" onclick="document.getElementById('btnPlanEscape').click();">
+              <span>INQUIRE ACCESS</span>
+              <svg viewBox="0 0 16 16" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" y1="12" x2="12" y2="4"></line><polyline points="5 4 12 4 12 11"></polyline></svg>
+            </button>
+            <span class="card-link-more">Via Ferrata Access</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+  <!-- Editorial Site Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo">elsewhere.</a>
+          <p class="footer-motto">
+            Curated architectural sanctuaries and bespoke expeditions across the world's most dramatic solitary landscapes.
+          </p>
+        </div>
+        <div class="footer-nav-col">
+          <h3>Directory</h3>
+          <ul class="footer-links">
+            <li><a href="places.html">Places &amp; Sanctuaries</a></li>
+            <li><a href="journeys.html">Journeys &amp; Expeditions</a></li>
+            <li><a href="experiences.html">Alpine Experiences</a></li>
+            <li><a href="journal.html">Field Journal</a></li>
+          </ul>
+        </div>
+        <div class="footer-nav-col">
+          <h3>Collections</h3>
+          <ul class="footer-links">
+            <li><a href="places.html?filter=swiss">The Alpine Collection</a></li>
+            <li><a href="places.html?filter=norway">The Fjord Collection</a></li>
+            <li><a href="places.html?filter=hokkaido">The Snow Sanctuary</a></li>
+            <li><a href="places.html?filter=dolomites">The Peak Sanctuary</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 ELSEWHERE ESCAPES INC. ALL RIGHTS RESERVED.</span>
+        <span class="footer-coords">45°55' N · 09°15' E</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Off-Canvas Editorial Navigation Drawer -->
+  <aside class="nav-drawer" id="navDrawer" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Destination Directory">
+    <div class="drawer-header">
+      <span class="drawer-logo">elsewhere.</span>
+      <button type="button" class="btn-drawer-close" id="btnCloseDrawer" aria-label="Close menu">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <div class="drawer-content">
+      <nav class="drawer-nav">
+        <ul class="drawer-links">
+          <li><a href="places.html" class="drawer-link">01 &nbsp; PLACES.</a></li>
+          <li><a href="journeys.html" class="drawer-link">02 &nbsp; JOURNEYS.</a></li>
+          <li><a href="experiences.html" class="drawer-link">03 &nbsp; EXPERIENCES.</a></li>
+          <li><a href="journal.html" class="drawer-link">04 &nbsp; JOURNAL</a></li>
+          <li><a href="#" class="drawer-link" onclick="document.getElementById('btnCloseDrawer').click(); document.getElementById('btnPlanEscape').click(); return false;">05 &nbsp; PRIVATE RESERVATIONS</a></li>
+        </ul>
+      </nav>
+
+      <div class="drawer-destinations">
+        <h2 class="drawer-subtitle">CURATED EXPEDITIONS</h2>
+        <div class="drawer-tags">
+          <span class="tag-pill">Swiss Alps · 45°55' N</span>
+          <span class="tag-pill">Norwegian Fjords · 61°12' N</span>
+          <span class="tag-pill">Hokkaido Peaks · 43°34' N</span>
+          <span class="tag-pill">Dolomites · 46°30' N</span>
+        </div>
+      </div>
+
+      <div class="drawer-footer">
+        <p>Bespoke sanctuary journeys across the world's most remote landscapes.</p>
+        <span class="drawer-copyright">&copy; 2026 ELSEWHERE ESCAPES INC.</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Booking / Escape Modal Dialog -->
+  <dialog class="escape-modal" id="escapeModal" aria-labelledby="modalTitle">
+    <div class="modal-card">
+      <button type="button" class="btn-modal-close" id="btnCloseModal" aria-label="Close dialog">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <h2 class="modal-title" id="modalTitle">Plan Your Escape</h2>
+      <p class="modal-desc">Tell us where your curiosity leads. Our expedition architects will tailor your stay.</p>
+
+      <form class="modal-form" id="escapeForm" onsubmit="event.preventDefault(); alert('Your escape itinerary inquiry has been received. Our concierge will be in touch shortly.'); document.getElementById('escapeModal').close();">
+        <div class="form-row">
+          <label class="form-label" for="inpDestination">Destination Collection</label>
+          <select id="inpDestination" class="form-select" required>
+            <option value="swiss">The Alpine Collection — Switzerland</option>
+            <option value="fjord">The Fjord Collection — Norway</option>
+            <option value="hokkaido">The Snow Sanctuary — Hokkaido</option>
+            <option value="dolomites">The Peak Sanctuary — Dolomites</option>
+          </select>
+        </div>
+
+        <div class="form-grid">
+          <div class="form-row">
+            <label class="form-label" for="inpSeason">Season of Travel</label>
+            <select id="inpSeason" class="form-select">
+              <option>Summer Alpenglow</option>
+              <option>Autumn Harvest</option>
+              <option>Winter Snowscape</option>
+              <option>Spring Blossom</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label class="form-label" for="inpGuests">Number of Guests</label>
+            <select id="inpGuests" class="form-select">
+              <option>Solo Traveler</option>
+              <option selected>Couple (2 Guests)</option>
+              <option>Small Group (3-6 Guests)</option>
+              <option>Private Estate Takeover</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <label class="form-label" for="inpEmail">Email Address</label>
+          <input type="email" id="inpEmail" class="form-input" placeholder="wanderer@domain.com" required>
+        </div>
+
+        <button type="submit" class="btn-modal-submit">
+          <span>REQUEST ITINERARY ACCESS</span>
+          <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="2" y1="8" x2="13" y2="8"></line>
+            <polyline points="9 4 13 8 9 12"></polyline>
+          </svg>
+        </button>
+      </form>
+    </div>
+  </dialog>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

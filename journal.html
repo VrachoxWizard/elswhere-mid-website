@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JOURNAL — The Elsewhere Review &amp; Field Chronicles | elsewhere.</title>
+  <meta name="description" content="Essays, photographic chronicles, and reflections on architecture, silence, and wanderlust from elsewhere.">
+
+  <!-- Google Fonts: Fraunces & Plus Jakarta Sans & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..700,0..100,0..1&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body class="inner-page">
+
+  <!-- Main Navigation Header -->
+  <header class="page-header" role="banner">
+    <div class="header-inner">
+      <a href="index.html" class="site-logo" aria-label="Elsewhere Home">
+        <span class="logo-text">elsewhere.</span>
+      </a>
+
+      <nav class="nav-menu" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="places.html" class="nav-link">PLACES.</a></li>
+          <li class="nav-item"><a href="journeys.html" class="nav-link">JOURNEYS.</a></li>
+          <li class="nav-item"><a href="experiences.html" class="nav-link">EXPERIENCES.</a></li>
+          <li class="nav-item"><a href="journal.html" class="nav-link active">JOURNAL</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button type="button" class="btn-escape" id="btnPlanEscape" aria-haspopup="dialog">
+          <span class="btn-escape-text">PLAN YOUR ESCAPE</span>
+          <svg class="icon-arrow-diagonal" viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="4" y1="12" x2="12" y2="4"></line>
+            <polyline points="5 4 12 4 12 11"></polyline>
+          </svg>
+        </button>
+
+        <button type="button" class="btn-menu" id="btnToggleMenu" aria-label="Open Navigation Menu" aria-expanded="false" aria-controls="navDrawer">
+          <span class="menu-line"></span>
+          <span class="menu-line"></span>
+          <span class="menu-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Hero Banner -->
+  <section class="page-hero" aria-labelledby="journalTitle">
+    <div class="page-hero-container">
+      <nav class="page-breadcrumbs" aria-label="Breadcrumbs">
+        <span>Field Archive</span> / <strong>The Elsewhere Review</strong>
+      </nav>
+      <h1 class="page-title" id="journalTitle">The Elsewhere Review</h1>
+      <p class="page-lead">
+        Quarterly field essays, architectural studies, and meditative photographic chronicles exploring the solitary landscapes at the edge of the world. Printed on 140gsm Munken Lynx paper.
+      </p>
+
+      <!-- Filter Bar -->
+      <div class="filter-bar" role="toolbar" aria-label="Filter journal articles by category">
+        <button type="button" class="filter-btn active" data-filter="all">All Dispatches</button>
+        <button type="button" class="filter-btn" data-filter="essays">Cover Essays</button>
+        <button type="button" class="filter-btn" data-filter="fieldnotes">Field Notes</button>
+        <button type="button" class="filter-btn" data-filter="architecture">Architecture</button>
+        <button type="button" class="filter-btn" data-filter="photography">Visual Chronicles</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Journal Editorial Directory -->
+  <main class="page-main" id="journalMain">
+
+    <!-- Print Masthead Banner -->
+    <header class="journal-masthead" aria-label="Magazine publication metadata">
+      <span class="masthead-volume">ISSUE VII &middot; WINTER SOLSTICE</span>
+      <span>PUBLISHED IN ST. MORITZ &amp; OSLO</span>
+      <span>CIRCULATION: 500 NUMBERED IMPRESSIONS</span>
+    </header>
+
+    <!-- Magazine Asymmetric Two-Column Editorial Spread -->
+    <section class="magazine-spread" aria-labelledby="coverStoryTitle">
+
+      <!-- Left Column: Primary Cover Essay Feature -->
+      <article class="editorial-story-panel">
+        <div class="story-lead-meta">
+          <span>ISSUE VII COVER ESSAY</span>
+          <span>&middot;</span>
+          <span>9 MIN READ</span>
+          <span>&middot;</span>
+          <span>ENGADIN 45&deg;55' N</span>
+        </div>
+
+        <h2 class="story-headline" id="coverStoryTitle">The Architecture of Disappearance</h2>
+
+        <p class="story-prose story-drop-cap">
+          When the midwinter blizzard drops visibility to twenty paces in the upper Bernina cirque, the monolithic granite walls of the refuge cease to look like human intervention. They become, instead, an organic extension of the terminal moraine—rough-hewn gneiss stones bonded with lime mortar that absorbs the blue twilight.
+        </p>
+
+        <blockquote class="editorial-pull-quote">
+          &ldquo;True sanctuary does not impose human will upon the mountain; it yields until the mountain forgets you are there.&rdquo;
+        </blockquote>
+
+        <p class="story-prose">
+          To step inside is not to retreat from the elements, but to observe them with heightened intimacy. The central hearth crackles with slow-burning larch, while triple-glazed panes of quartz crystal frame the slow drift of powder snow across the frozen tarn. Here, luxury is stripped of ornament and returned to fundamental elemental warmth.
+        </p>
+
+        <div class="card-action-row" style="margin-top: 32px; padding-top: 24px; border-top: 1px solid rgba(255, 255, 255, 0.08);">
+          <button type="button" class="btn-card-inquire" onclick="alert('The complete Issue VII cover essay will be delivered with your expedition welcome dossier.');">
+            <span>READ COMPLETE FOLIO</span>
+            <svg viewBox="0 0 16 16" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <line x1="4" y1="12" x2="12" y2="4"></line>
+              <polyline points="5 4 12 4 12 11"></polyline>
+            </svg>
+          </button>
+          <span class="card-link-more">By Julian Vane &middot; Engadin Canton</span>
+        </div>
+      </article>
+
+      <!-- Right Column: Cover Artwork & Table of Contents -->
+      <aside class="editorial-cover-sidebar" aria-label="Issue Contents and Colophon">
+        <div class="cover-art-frame">
+          <div class="cover-art-img-box">
+            <img src="assets/images/background-clean.webp" alt="Piz Bernina granite ridge covered in fresh winter powder" loading="lazy">
+          </div>
+          <div class="cover-art-caption">
+            <h3 class="cover-caption-title">Plate 07: Bernina Crest at Dawn</h3>
+            <p class="cover-caption-meta">Exposure on Kodak Tri-X 400 &middot; 80mm Planar &middot; 2,820m ASL</p>
+          </div>
+        </div>
+
+        <div class="folio-toc">
+          <h3 class="folio-toc-title">Issue VII &middot; Table of Contents</h3>
+          <ul class="folio-toc-list">
+            <li>
+              <a href="#coverStoryTitle" class="folio-toc-item">
+                <span class="folio-toc-num">01</span>
+                <span>The Architecture of Disappearance</span>
+                <span class="folio-toc-page">p. 14</span>
+              </a>
+            </li>
+            <li>
+              <a href="#storySilence" class="folio-toc-item">
+                <span class="folio-toc-num">02</span>
+                <span>The Physics of Silence</span>
+                <span class="folio-toc-page">p. 38</span>
+              </a>
+            </li>
+            <li>
+              <a href="#storyCedar" class="folio-toc-item">
+                <span class="folio-toc-num">03</span>
+                <span>Cedar, Stone, and Snow</span>
+                <span class="folio-toc-page">p. 64</span>
+              </a>
+            </li>
+            <li>
+              <a href="#storyAlpenglow" class="folio-toc-item">
+                <span class="folio-toc-num">04</span>
+                <span>The Alpenglow Hour</span>
+                <span class="folio-toc-page">p. 92</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+    </section>
+
+    <!-- Film Photography Chronicle Section -->
+    <section class="photo-chronicle-section" aria-labelledby="chronicleTitle">
+      <header class="chronicle-header">
+        <div>
+          <h2 class="chronicle-title" id="chronicleTitle">Visual Chronicle: The High Winter Plates</h2>
+          <p class="chronicle-sub">Hasselblad 500C/M &middot; Kodak Tri-X 400 &middot; Archival Silver Gelatin Studies</p>
+        </div>
+      </header>
+
+      <div class="film-strip-grid">
+        <!-- Film Frame 1 -->
+        <article class="film-frame">
+          <div class="film-photo">
+            <img src="assets/images/background-clean.webp" alt="Terminal moraine in early morning light" loading="lazy">
+          </div>
+          <div class="film-meta-bar">
+            <span>EXP. 14 &middot; 80MM F/2.8</span>
+            <span>1/250S &middot; F/8</span>
+          </div>
+          <p class="film-caption-text">01. Moraine ridge at first light. Wind scoured granite slopes above Morteratsch.</p>
+        </article>
+
+        <!-- Film Frame 2 -->
+        <article class="film-frame">
+          <div class="film-photo">
+            <img src="assets/images/background-clean.webp" alt="Rimed sugi shingles with frost crystals" loading="lazy">
+          </div>
+          <div class="film-meta-bar">
+            <span>EXP. 19 &middot; 50MM F/4.0</span>
+            <span>1/125S &middot; F/11</span>
+          </div>
+          <p class="film-caption-text">02. Hand-split cedar shingles gathering windward hoarfrost under -14&deg;C.</p>
+        </article>
+
+        <!-- Film Frame 3 -->
+        <article class="film-frame">
+          <div class="film-photo">
+            <img src="assets/images/background-clean.webp" alt="Alpenglow light fading over alpine pinnacles" loading="lazy">
+          </div>
+          <div class="film-meta-bar">
+            <span>EXP. 23 &middot; 150MM F/4.0</span>
+            <span>1/500S &middot; F/5.6</span>
+          </div>
+          <p class="film-caption-text">03. The final amber glow crossing the vertical limestone spires of Sassolungo.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Archive Folios & Secondary Stories Grid -->
+    <section class="journal-archive-section" aria-labelledby="archiveTitle">
+      <div class="journal-archive-header">
+        <div>
+          <h2 class="journal-archive-title" id="archiveTitle">Archive Folios &amp; Field Studies</h2>
+          <p class="journal-archive-lead">
+            In-depth meditations on acoustic ecology, ancestral joinery, and the optical physics of alpine twilight.
+          </p>
+        </div>
+      </div>
+
+      <div class="cards-grid" id="journalGrid">
+
+        <!-- Story 1: The Physics of Silence -->
+        <article class="journal-card" data-category="essays" id="storySilence">
+          <div class="card-media">
+            <img src="assets/images/background-clean.webp" alt="High alpine silence meditation" class="card-media-art" loading="lazy">
+            <div class="card-media-overlay"></div>
+            <span class="card-location-tag">
+              <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+              Valais &middot; 2,750m
+            </span>
+            <span class="card-number-tag">02</span>
+          </div>
+          <div class="card-body">
+            <span class="card-region">ACOUSTIC ECOLOGY &middot; 5 MIN READ</span>
+            <h3 class="card-heading">The Physics of Silence</h3>
+            <p class="card-description">
+              What happens to the human cardiovascular pulse and neurological activity above 2,500 meters when all mechanical vibration ceases completely.
+            </p>
+            <div class="card-specs">
+              <div class="spec-item">
+                <span class="spec-label">Author</span>
+                <span class="spec-val">Dr. Clara Thorne</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Focus</span>
+                <span class="spec-val">Ambient Ecology</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Noise Floor</span>
+                <span class="spec-val">&lt; 12 dB</span>
+              </div>
+            </div>
+            <div class="card-action-row">
+              <button type="button" class="btn-card-inquire" onclick="alert('Essay preview opened in your reader.');">
+                <span>READ FOLIO</span>
+                <svg viewBox="0 0 16 16" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="4" y1="12" x2="12" y2="4"></line><polyline points="5 4 12 4 12 11"></polyline></svg>
+              </button>
+              <span class="card-link-more">Issue V</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Story 2: Cedar, Stone, and Snow -->
+        <article class="journal-card" data-category="architecture" id="storyCedar">
+          <div class="card-media">
+            <img src="assets/images/background-clean.webp" alt="Japanese traditional cedar craftsmanship in Hokkaido" class="card-media-art" loading="lazy">
+            <div class="card-media-overlay"></div>
+            <span class="card-location-tag">
+              <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+              Hokkaido &middot; Niseko
+            </span>
+            <span class="card-number-tag">03</span>
+          </div>
+          <div class="card-body">
+            <span class="card-region">ARCHITECTURE &middot; 7 MIN READ</span>
+            <h3 class="card-heading">Cedar, Stone, and Snow</h3>
+            <p class="card-description">
+              Generational woodworkers in the northern Japanese Alps on why century-old sugi timbers breathe differently under three meters of dry champagne powder.
+            </p>
+            <div class="card-specs">
+              <div class="spec-item">
+                <span class="spec-label">Author</span>
+                <span class="spec-val">Kenji Takahashi</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Craft</span>
+                <span class="spec-val">Miyadaiku Joinery</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Material</span>
+                <span class="spec-val">Aged Sugi Cedar</span>
+              </div>
+            </div>
+            <div class="card-action-row">
+              <button type="button" class="btn-card-inquire" onclick="alert('Architecture study opened in your reader.');">
+                <span>READ FOLIO</span>
+                <svg viewBox="0 0 16 16" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="4" y1="12" x2="12" y2="4"></line><polyline points="5 4 12 4 12 11"></polyline></svg>
+              </button>
+              <span class="card-link-more">Issue VII</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Story 3: The Alpenglow Hour -->
+        <article class="journal-card" data-category="fieldnotes" id="storyAlpenglow">
+          <div class="card-media">
+            <img src="assets/images/background-clean.webp" alt="Enrosadira sunset over the Dolomites" class="card-media-art" loading="lazy">
+            <div class="card-media-overlay"></div>
+            <span class="card-location-tag">
+              <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+              Dolomites &middot; Val Gardena
+            </span>
+            <span class="card-number-tag">04</span>
+          </div>
+          <div class="card-body">
+            <span class="card-region">FIELD NOTES &middot; 4 MIN READ</span>
+            <h3 class="card-heading">The Alpenglow Hour: Notes on Enrosadira</h3>
+            <p class="card-description">
+              Chasing the twenty minutes at dusk where ancient coral-origin limestone pinnacles turn from blazing copper to deep rose before the chill descends.
+            </p>
+            <div class="card-specs">
+              <div class="spec-item">
+                <span class="spec-label">Author</span>
+                <span class="spec-val">Matteo Rossi</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Phenomenon</span>
+                <span class="spec-val">Enrosadira Glow</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Peak</span>
+                <span class="spec-val">Sassolungo</span>
+              </div>
+            </div>
+            <div class="card-action-row">
+              <button type="button" class="btn-card-inquire" onclick="alert('Field note opened in your reader.');">
+                <span>READ FOLIO</span>
+                <svg viewBox="0 0 16 16" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="4" y1="12" x2="12" y2="4"></line><polyline points="5 4 12 4 12 11"></polyline></svg>
+              </button>
+              <span class="card-link-more">Issue VII</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Hardcover Collector Edition Feature Box -->
+    <section class="hardcover-edition-box" aria-labelledby="editionBoxTitle">
+      <div class="edition-info">
+        <h2 class="edition-heading" id="editionBoxTitle">Annual Collector's Compendium: The Solitary Alpine (Vol. I&mdash;IV)</h2>
+        <p class="edition-desc">
+          A 320-page clothbound hardback volume bound in Swiss-milled linen, containing forty field essays, foldout topographic elevation charts, and hand-tipped silver gelatin contact prints. Limited to 500 hand-numbered copies.
+        </p>
+      </div>
+      <button type="button" class="btn-card-inquire" style="padding: 16px 28px; font-size: 12px;" onclick="document.getElementById('btnPlanEscape').click();">
+        <span>RESERVE NUMBERED COPY</span>
+        <svg viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+          <line x1="4" y1="12" x2="12" y2="4"></line>
+          <polyline points="5 4 12 4 12 11"></polyline>
+        </svg>
+      </button>
+    </section>
+
+  </main>
+
+  <!-- Editorial Site Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo">elsewhere.</a>
+          <p class="footer-motto">
+            Curated architectural sanctuaries and bespoke expeditions across the world's most dramatic solitary landscapes.
+          </p>
+        </div>
+        <div class="footer-nav-col">
+          <h3>Directory</h3>
+          <ul class="footer-links">
+            <li><a href="places.html">Places &amp; Sanctuaries</a></li>
+            <li><a href="journeys.html">Journeys &amp; Expeditions</a></li>
+            <li><a href="experiences.html">Alpine Experiences</a></li>
+            <li><a href="journal.html">The Elsewhere Review</a></li>
+          </ul>
+        </div>
+        <div class="footer-nav-col">
+          <h3>Collections</h3>
+          <ul class="footer-links">
+            <li><a href="journal.html?filter=essays">Editorial Essays</a></li>
+            <li><a href="journal.html?filter=fieldnotes">Field Notes</a></li>
+            <li><a href="journal.html?filter=architecture">Architectural Studies</a></li>
+            <li><a href="journal.html?filter=photography">Visual Chronicles</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 ELSEWHERE ESCAPES INC. ALL RIGHTS RESERVED.</span>
+        <span class="footer-coords">45&deg;55' N &middot; 09&deg;15' E</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Off-Canvas Editorial Navigation Drawer -->
+  <aside class="nav-drawer" id="navDrawer" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Destination Directory">
+    <div class="drawer-header">
+      <span class="drawer-logo">elsewhere.</span>
+      <button type="button" class="btn-drawer-close" id="btnCloseDrawer" aria-label="Close menu">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <div class="drawer-content">
+      <nav class="drawer-nav">
+        <ul class="drawer-links">
+          <li><a href="places.html" class="drawer-link">01 &nbsp; PLACES.</a></li>
+          <li><a href="journeys.html" class="drawer-link">02 &nbsp; JOURNEYS.</a></li>
+          <li><a href="experiences.html" class="drawer-link">03 &nbsp; EXPERIENCES.</a></li>
+          <li><a href="journal.html" class="drawer-link">04 &nbsp; JOURNAL</a></li>
+          <li><a href="#" class="drawer-link" onclick="document.getElementById('btnCloseDrawer').click(); document.getElementById('btnPlanEscape').click(); return false;">05 &nbsp; PRIVATE RESERVATIONS</a></li>
+        </ul>
+      </nav>
+
+      <div class="drawer-destinations">
+        <h2 class="drawer-subtitle">CURATED EXPEDITIONS</h2>
+        <div class="drawer-tags">
+          <span class="tag-pill">Swiss Alps &middot; 45&deg;55' N</span>
+          <span class="tag-pill">Norwegian Fjords &middot; 61&deg;12' N</span>
+          <span class="tag-pill">Hokkaido Peaks &middot; 43&deg;34' N</span>
+          <span class="tag-pill">Dolomites &middot; 46&deg;30' N</span>
+        </div>
+      </div>
+
+      <div class="drawer-footer">
+        <p>Bespoke sanctuary journeys across the world's most remote landscapes.</p>
+        <span class="drawer-copyright">&copy; 2026 ELSEWHERE ESCAPES INC.</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Booking / Escape Modal Dialog -->
+  <dialog class="escape-modal" id="escapeModal" aria-labelledby="modalTitle">
+    <div class="modal-card">
+      <button type="button" class="btn-modal-close" id="btnCloseModal" aria-label="Close dialog">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <h2 class="modal-title" id="modalTitle">Plan Your Escape</h2>
+      <p class="modal-desc">Tell us where your curiosity leads. Our expedition architects will tailor your stay.</p>
+
+      <form class="modal-form" id="escapeForm" onsubmit="event.preventDefault(); alert('Your escape inquiry has been received. Our concierge will be in touch shortly.'); document.getElementById('escapeModal').close();">
+        <div class="form-row">
+          <label class="form-label" for="inpDestination">Destination Collection</label>
+          <select id="inpDestination" class="form-select" required>
+            <option value="swiss">The Alpine Collection — Switzerland</option>
+            <option value="fjord">The Fjord Collection — Norway</option>
+            <option value="hokkaido">The Snow Sanctuary — Hokkaido</option>
+            <option value="dolomites">The Peak Sanctuary — Dolomites</option>
+          </select>
+        </div>
+
+        <div class="form-grid">
+          <div class="form-row">
+            <label class="form-label" for="inpSeason">Season of Travel</label>
+            <select id="inpSeason" class="form-select">
+              <option>Summer Alpenglow</option>
+              <option>Autumn Harvest</option>
+              <option>Winter Snowscape</option>
+              <option>Spring Blossom</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label class="form-label" for="inpGuests">Number of Guests</label>
+            <select id="inpGuests" class="form-select">
+              <option>Solo Traveler</option>
+              <option selected>Couple (2 Guests)</option>
+              <option>Small Group (3-6 Guests)</option>
+              <option>Private Estate Takeover</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <label class="form-label" for="inpEmail">Email Address</label>
+          <input type="email" id="inpEmail" class="form-input" placeholder="wanderer@domain.com" required>
+        </div>
+
+        <button type="submit" class="btn-modal-submit">
+          <span>REQUEST ITINERARY ACCESS</span>
+          <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="2" y1="8" x2="13" y2="8"></line>
+            <polyline points="9 4 13 8 9 12"></polyline>
+          </svg>
+        </button>
+      </form>
+    </div>
+  </dialog>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
